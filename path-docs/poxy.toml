@@ -1,0 +1,27 @@
+# this is a config file for Poxy - a Doxygen + m.css front-end written in Python.
+# https://github.com/marzer/poxy
+#
+# config reference: https://github.com/marzer/poxy/wiki/Configuration-options
+
+name            = 'path bug'
+author          = 'Benjamin Ulmer'
+cpp             = 20
+show_includes   = true
+changelog       = false
+logo            = ''
+favicon         = ''
+navbar          = [ 'default' ]
+theme           = 'dark'
+extra_files     = []
+
+[warnings]
+enabled         = true
+treat_as_errors = false
+undocumented    = true
+
+[sources]
+paths           = [ 'pages' ]
+recursive_paths = [ '../path' ]
+patterns        = [ '*.hpp', '*.dox', '*.md' ]
+strip_paths     = [ '../path', 'pages' ]
+extract_all = true
